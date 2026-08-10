@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import '../consoleConstants.dart';
 
-/// A generic placeholder page used when a feature is not yet implemented.
-/// It displays an icon and a "coming soon" message.
 class FeaturePlaceholderPage extends StatelessWidget {
   final String title;
   const FeaturePlaceholderPage({required this.title, super.key});
@@ -32,8 +30,6 @@ class FeaturePlaceholderPage extends StatelessWidget {
   }
 }
 
-/// A simple placeholder widget used for Bottom Navigation tabs
-/// that are still under development.
 class PlaceholderTab extends StatelessWidget {
   final String label;
   final IconData icon;
