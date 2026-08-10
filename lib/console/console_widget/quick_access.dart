@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import '../consoleConstants.dart';
 
-/// Data model for an item in the Quick Access grid.
+
 class QuickAccessItem {
   final String label;
   final IconData icon;
@@ -12,8 +12,7 @@ class QuickAccessItem {
   QuickAccessItem({required this.label, required this.icon, required this.color, this.onTap});
 }
 
-/// A horizontally scrollable row of Quick Access tiles.
-/// Connects to a rotation listener for subtle parallax effects during scroll.
+
 class QuickAccessRow extends StatelessWidget {
   final List<QuickAccessItem> items;
   final ValueListenable<double> rotation;
@@ -34,8 +33,6 @@ class QuickAccessRow extends StatelessWidget {
   }
 }
 
-/// An individual Quick Access button.
-/// Features a "jiggle" animation on press and a 3D flip animation on tap.
 class QuickAccessTile extends StatefulWidget {
   final QuickAccessItem item;
   final ValueListenable<double> rotation;
