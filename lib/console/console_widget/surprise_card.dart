@@ -2,8 +2,8 @@ import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import '../consoleConstants.dart';
 
-/// A card that reveals a surprise when tapped.
-/// Features a touch-driven parallax tilt effect and a confetti burst animation.
+// surprise card for future updates 
+
 class SurpriseCard extends StatefulWidget {
   final VoidCallback onReveal;
   const SurpriseCard({required this.onReveal, super.key});
