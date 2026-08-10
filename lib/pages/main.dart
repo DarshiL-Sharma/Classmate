@@ -10,10 +10,10 @@ import '../console/console_main.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Initializing Firebase (using native config files)
+
   await Firebase.initializeApp();
 
-  // App Check for protection
+
   await FirebaseAppCheck.instance.activate(
     androidProvider: AndroidProvider.debug,
   );
@@ -33,7 +33,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// Decides where to send the user on app launch
+
 class AuthGate extends StatelessWidget {
   const AuthGate({super.key});
 
@@ -48,19 +48,13 @@ class AuthGate extends StatelessWidget {
           );
         }
         if (snapshot.hasData) {
-          // Already logged in — showing your console main screen
           return const HomeScreenPlaceholder();
         }
-        // Not logged in — show onboarding
         return const OnboardingScreen();
       },
     );
   }
 }
-
-// ============================================================
-// MODEL
-// ============================================================
 class OnboardData {
   final String image; 
   final String title;
@@ -77,35 +71,35 @@ class OnboardData {
 
 const List<OnboardData> onboardPages = [
   OnboardData(
-    image: 'assets/images/Online document.gif', // notes/files/folder type animation
+    image: 'assets/images/Online document.gif', 
     title: 'All Your Docs,\nOne Tap Away',
     description:
     'Class notes, syllabus and exam hall tickets — organized and ready whenever you need them.',
     cardColor: AppColors.cardBeige,
   ),
   OnboardData(
-    image: 'assets/images/Time management.gif', // keep this — calendar/clock/schedule animation
+    image: 'assets/images/Time management.gif', 
     title: 'Your Timetable,\nAlways Handy',
     description:
     'Check your daily class schedule and exam dates at a glance — no more asking around.',
     cardColor: AppColors.cardBeige,
   ),
   OnboardData(
-    image: 'assets/images/Reminders.gif', // notification bell / calendar alert animation
+    image: 'assets/images/Reminders.gif', 
     title: 'Never Miss\nAn Event',
     description:
     'Stay updated with the latest college events, fests and deadlines as they happen.',
     cardColor: AppColors.cardBeigeLight,
   ),
   OnboardData(
-    image: 'assets/images/Refer a friend.gif', // people/group chat bubble style illustration
+    image: 'assets/images/Refer a friend.gif', 
     title: 'Join The\nCommunity',
     description:
     'Post, comment and connect with your batch in dedicated community sections.',
     cardColor: AppColors.cardBeige,
   ),
   OnboardData(
-    image: 'assets/images/Stand out.gif', // badge/checkmark/certificate style illustration
+    image: 'assets/images/Stand out.gif', 
     title: 'Get Verified,\nGet Noticed',
     description:
     'Apply for CR or organizer badges and stand out with a verified tick on your profile.',
@@ -113,9 +107,7 @@ const List<OnboardData> onboardPages = [
   ),
 ];
 
-// ============================================================
-// SCREEN
-// ============================================================
+
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
 
@@ -146,7 +138,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
 
     return PopScope(
       canPop: _currentPage == 0,
-      // Only allow system back if we are on the first page
+     
       onPopInvokedWithResult: (didPop, result) {
         if (didPop) return;
         if (_currentPage > 0) {
@@ -170,7 +162,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
           child: SafeArea(
             child: Column(
               children: [
-                // Skip button row
                 Padding(
                   padding: const EdgeInsets.symmetric(
                       horizontal: 24, vertical: 12),
@@ -201,7 +192,6 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   ),
                 ),
 
-                // Swipeable pages
                 Expanded(
                   child: PageView.builder(
                     controller: _controller,
@@ -213,10 +203,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     },
                   ),
                 ),
-
                 const SizedBox(height: 12),
-
-                // Dots indicator
+          
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: List.generate(
@@ -236,10 +224,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                         ),
                   ),
                 ),
-
                 const SizedBox(height: 28),
-
-                // Fixed height container for CTA button
                 SizedBox(
                   height: 48,
                   child: Visibility(
