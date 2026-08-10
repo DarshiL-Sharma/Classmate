@@ -10,8 +10,7 @@ class PromoEvent {
   PromoEvent({required this.title, required this.subtitle, required this.img});
 }
 
-/// Renders either an image or a video within the carousel card.
-/// Automatically detects video files by extension (.mp4, .mov, .webm).
+
 class CarouselMedia extends StatefulWidget {
   final PromoEvent event;
   final bool isActive;
