@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1091383581818",
+    "project_id": "ips-community-app-9a442",
+    "storage_bucket": "ips-community-app-9a442.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091383581818:android:6bb8b7b010debe24232fc3",
+        "android_client_info": {
+          "package_name": "com.DarshilSharma.community"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYzcNfO4LIxI4AbMt4qTGb1T2g96803WA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
