@@ -7,7 +7,7 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1091383581818:android:6bb8b7b010debe24232fc3",
+        "mobilesdk_app_id": "c3",
         "android_client_info": {
           "package_name": "com.DarshilSharma.community"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyCYzcNfO4LIxI4AbMt4qTGb1T2g96803WA"
+          "current_key":
         }
       ],
       "services": {
