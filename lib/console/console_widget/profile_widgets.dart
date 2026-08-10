@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../consoleConstants.dart';
 
-/// A button used within the Profile Bottom Sheet.
-/// Supports a label, icon, and optional destructive styling (red color).
+
 class ProfileSheetAction extends StatelessWidget {
   final IconData icon;
   final String label;
@@ -40,8 +39,6 @@ class ProfileSheetAction extends StatelessWidget {
   }
 }
 
-/// Displays a stylized bottom sheet containing user information 
-/// (Avatar, Name, Email) and quick actions like settings and logout.
 void showProfileSheet({
   required BuildContext context,
   required VoidCallback onAccountSettings,
