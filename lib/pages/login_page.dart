@@ -5,8 +5,7 @@ import 'package:community/constants.dart';
 import 'package:community/pages/main.dart';
 import 'package:community/console/console_main.dart';
 import 'package:community/pages/register.dart';
-// import 'package:community/home_screen.dart'; // TODO: point this to your actual home/dashboard screen
-// import 'package:url_launcher/url_launcher.dart'; // needed for the Terms link — add url_launcher to pubspec.yaml
+
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -51,7 +50,6 @@ class _LoginScreenState extends State<LoginScreen> {
 
       if (!mounted) return;
 
-      // TODO: replace HomeScreenPlaceholder with your real dashboard/home screen
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const HomeScreenPlaceholder()),
@@ -86,10 +84,6 @@ class _LoginScreenState extends State<LoginScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              // --- PHOTO PANEL -------------------------------------------------
-              // NEW: real photo instead of a gradient/icon badge. Drop a campus or
-              // student-life photo at assets/images/login_hero.jpg and add it to
-              // pubspec.yaml under flutter: assets: - assets/images/login_hero.jpg
               SizedBox(
                 height: screenHeight * 0.34,
                 child: Stack(
@@ -98,7 +92,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     Image.asset(
                       'assets/images/hercules-hall-surrounded-by-greenery-sunlight-daytime-munich-germany.jpg',
                       fit: BoxFit.cover,
-                      // Fallback so the screen still compiles/runs before you add the asset
                       errorBuilder: (context, error, stackTrace) => Container(
                         color: AppColors.textDark,
                         child: const Center(
@@ -106,7 +99,6 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                     ),
-                    // Bottom scrim so the tag stays legible over any photo
                     const DecoratedBox(
                       decoration: BoxDecoration(
                         gradient: LinearGradient(
@@ -116,8 +108,6 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                       ),
                     ),
-                    // NEW: ID-card style tag — the one deliberate signature element,
-                    // referencing the "community/student ID" idea instead of a generic badge
                     Positioned(
                       left: 24,
                       bottom: 20,
@@ -141,7 +131,6 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
 
-              // --- FORM ----------------------------------------------------------
               Padding(
                 padding: const EdgeInsets.fromLTRB(28, 32, 28, 24),
                 child: Column(
@@ -173,7 +162,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                     const SizedBox(height: 32),
 
-                    // NEW: underline-only field, no fill/icon clutter
                     TextField(
                       controller: _emailController,
                       keyboardType: TextInputType.emailAddress,
@@ -231,7 +219,6 @@ class _LoginScreenState extends State<LoginScreen> {
 
                     const SizedBox(height: 34),
 
-                    // NEW: flat, solid button — no gradient, no glow shadow
                     SizedBox(
                       width: double.infinity,
                       height: 52,
@@ -301,8 +288,6 @@ class _LoginScreenState extends State<LoginScreen> {
                               ),
                               recognizer: TapGestureRecognizer()
                                 ..onTap = () {
-                                  // TODO: replace with your real hosted Terms & Conditions URL
-                                  // launchUrl(Uri.parse('https://yourapp.com/terms'));
                                   showDialog(
                                     context: context,
                                     builder: (context) => AlertDialog(
