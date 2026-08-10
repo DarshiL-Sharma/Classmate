@@ -89,8 +89,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
       if (mounted) setState(() => _isLoading = false);
     }
   }
-
-  // Shared underline-style field — matches the login screen exactly
   Widget _buildField({
     required TextEditingController controller,
     required String label,
@@ -142,9 +140,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              // --- PHOTO PANEL -------------------------------------------------
-              // Drop a photo at assets/images/register_hero.jpg and register it in
-              // pubspec.yaml under flutter: assets: - assets/images/register_hero.jpg
               SizedBox(
                 height: screenHeight * 0.30,
                 child: Stack(
@@ -203,7 +198,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 ),
               ),
 
-              // --- FORM ----------------------------------------------------------
+            
               Padding(
                 padding: const EdgeInsets.fromLTRB(28, 28, 28, 24),
                 child: Column(
