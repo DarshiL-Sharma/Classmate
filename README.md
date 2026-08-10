@@ -23,7 +23,7 @@ Most college apps look and feel like they were built a decade ago and abandoned 
 
 The goal isn't just to digitize a noticeboard. It's to give every student one reliable place to check their timetable, track attendance, pull notes for any subject, stay on top of exams and academic dates, and actually talk to their batch — all without hunting through five different apps and group chats to find one PDF.
 
-**Website:** [classmate.app](#) *(placeholder — link goes here once live)*
+**Website:** [classmate.app](#)
 
 ## Features
 
