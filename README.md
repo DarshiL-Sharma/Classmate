@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/logo.png" alt="Classmate logo" width="120" />
+  <img src="assets/logo.png" alt="Classmate logo" width="96" />
 
   # Classmate
 
@@ -36,13 +36,22 @@ The goal isn't just to digitize a noticeboard. It's to give every student one re
 
 ## Screenshots
 
-<div align="center">
-  <img src="assets/screenshot-home.png" alt="Home screen" width="220" />
-  <img src="assets/screenshot-community.png" alt="Community feed" width="220" />
-  <img src="assets/screenshot-notes.png" alt="Notes and docs" width="220" />
-</div>
-
-*(placeholders — replace with actual app screenshots once available)*
+<table align="center">
+  <tr>
+    <td align="center" width="33%">
+      <img src="assets/screenshot-home.png" alt="Home screen" width="200" /><br />
+      <sub><b>Home</b> — attendance, quick access, and what's next</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="assets/screenshot-notes.png" alt="Notes and docs" width="200" /><br />
+      <sub><b>Notes & Docs</b> — subject-wise material by semester</sub>
+    </td>
+    <td align="center" width="33%">
+      <img src="assets/screenshot-community.png" alt="Community feed" width="200" /><br />
+      <sub><b>Community</b> — live campus feed</sub>
+    </td>
+  </tr>
+</table>
 
 ## Tech Stack
 
