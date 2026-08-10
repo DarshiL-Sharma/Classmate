@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="assets/images/wrong.png" alt="Classmate logo" width="96" />
+  <img src="assets/images/logo.png" alt="Classmate logo" width="96" />
 
   # Classmate
 
