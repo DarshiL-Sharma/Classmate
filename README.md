@@ -5,7 +5,7 @@
 
   <p><i>One app for everything college — timetable, notes, events, and the campus community, in one place.</i></p>
 
-  <a href="#">Website</a> ·
+  <a href="ips-360.vercel.app">Website</a> ·
   <a href="#features">Features</a> ·
   <a href="#screenshots">Screenshots</a> ·
   <a href="#tech-stack">Tech Stack</a> ·
